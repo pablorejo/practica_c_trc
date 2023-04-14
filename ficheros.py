@@ -8,7 +8,7 @@ M = 50 # Número de recursos 2gb/40mb
 SEMILLA = 333
 TOLERANCIA_RELATIVA = 0.002
 CALIDAD = 0.95
-
+A_0 = 15 # A para i = 0
 
 # Vamos a definir los tipos de enlaces y el numero de traficos ofrecidos
 enlaces = {2, 4, 6, 10}
@@ -31,7 +31,7 @@ for i in range(0,5):
     for enl in enlaces:
 
         # Funcion de tiempos médios lamda
-        r = (1-0.04)*i
+        r = 1-(0.04)*i
         y = (r + 15)/S # Llegadas por segundo
         # Luego el tiempo entre llegadas es 1/y
 
@@ -51,17 +51,16 @@ for i in range(0,5):
 
 puntos_x = []
 puntos_y = []
-for i in range(0,5):
+for i in range(0,6):
     puntos_x.append(i)
-    r = (1-0.04)*i
-    A = r*7.5 # Llegadas por segundo
+    ri = 1-(0.04)*i
+    A = ri*A_0/2 # Llegadas por segundo
     
 
     output = subprocess.check_output("./Erlang.tcl 50 "+str(A), shell=True)
     output_str = output.decode('utf-8')
     valor = [(float(num)) for num in output_str.split()][0]
     puntos_y.append(valor)
-    print(puntos_y)
 
 # Crear la figura y los ejes
 fig, ax = plt.subplots()
