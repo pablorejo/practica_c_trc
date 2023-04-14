@@ -36,19 +36,21 @@ for i in range(0,5):
         # Luego el tiempo entre llegadas es 1/y
 
         f.write(
-            "M "+ str(1/y) + "\n" +
+            "M "+ str(enl/y) + "\n" +
             "M "+ str(S)+"\n" +
             str(j) + "\n\n" 
         ) 
         j += 1
 
-    if (i != 0):
-        t = min(1,((1-Bmin)*TOLERANCIA_RELATIVA)/Bmin)
     
     i +=1
-    f.close()
 
-    os.system("./SimRedMMkk -s " + str(SEMILLA) + " -q " + str(CALIDAD) + " -t " + str(TOLERANCIA_RELATIVA) + " config_" + str(i) + ".cfg -c")
+    # if (i != 0):
+    #     t = min(1,((1-Bmin)*TOLERANCIA_RELATIVA)/Bmin)
+
+    # f.close()
+
+    # os.system("./SimRedMMkk -s " + str(SEMILLA) + " -q " + str(CALIDAD) + " -t " + str(TOLERANCIA_RELATIVA) + " config_" + str(i) + ".cfg -c")
 
 
         
