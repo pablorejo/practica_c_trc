@@ -12,3 +12,13 @@ Sin enbargo tendremos 4 tipos distintos de enlaces
 3. Tipo 3: 6 tráficos 3 por cada sentido
 4. Tipo 4: 10 tráficos 5 por cada sentido
 
+# Ejecución
+Para ejecutar la configuracion simplemente usar el comando
+```bash
+python3 ficheros.py
+```
+
+## parametros
+En caso de querer cambiar algunos parámetros:
+1. Entrar en el `ficheros.py`
+2. Editar las primeras lineas que convengan
