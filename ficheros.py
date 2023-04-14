@@ -2,7 +2,7 @@ import os
 S = 120 #segundos Tiempo de servicio demandado
 M = 50 # Número de recursos 2gb/40mb
 SEMILLA = 333
-TOLERANCIA_RELATIVA = 0.01
+TOLERANCIA_RELATIVA = 0.002
 CALIDAD = 0.95
 
 
@@ -41,6 +41,6 @@ for enl in enlaces:
 f.close()
 
 ## Para ejecutar o fichero
-os.system("./SimRedMMkk -s " + str(SEMILLA) + " -q " + str(CALIDAD) + " -t " + str(TOLERANCIA_RELATIVA) + " config.cfg")
+os.system("./SimRedMMkk -s " + str(SEMILLA) + " -q " + str(CALIDAD) + " -t " + str(TOLERANCIA_RELATIVA) + " config.cfg -c")
 
 # os.system("rm *.cfg")
