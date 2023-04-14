@@ -1,0 +1,14 @@
+# Practia c
+## Encaminamiento axial
+### 2 SALTOS
+Para dos saltos vamos a tener 3 tipos distintos de rutas
+1. Las rutas con origen A,C,E,G serán equivalentes 
+2. Las rutas con origen H y D serán equivalentes
+3. Las rutas con origen B y F serán equivalentes
+
+Sin enbargo tendremos 4 tipos distintos de enlaces 
+1. Tipo 1: 2 tráficos uno para cada sentido
+2. Tipo 2: 4 tráficos dos por cada sentido
+3. Tipo 3: 6 tráficos 3 por cada sentido
+4. Tipo 4: 10 tráficos 5 por cada sentido
+
