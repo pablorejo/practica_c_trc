@@ -22,3 +22,27 @@ python3 ficheros.py
 En caso de querer cambiar algunos parámetros:
 1. Entrar en el `ficheros.py`
 2. Editar las primeras lineas que convengan
+
+## Un solo salto
+Si hablamos de un solo salto tendremos que se cumple siempre que:
+- m = 50
+- A = 7.5*ri
+
+Por lo tanto la probabilidad de bloqueo en  ese enlace será de E(50,A)
+
+
+### Para ejecutarlo 
+`IMPORTANTE`: Necesitas [instalar matplotlib]
+```bash
+python3 ficheros.py
+```
+
+#### Instalar matplotlib
+1. 
+```bash
+sudo apt install python3-pip
+```
+2. 
+```bash
+pip install matplotlib
+```
