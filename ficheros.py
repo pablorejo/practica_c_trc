@@ -54,12 +54,13 @@ puntos_y = []
 for i in range(0,5):
     puntos_x.append(i)
     r = (1-0.04)*i
-    y = (r + 15)/S # Llegadas por segundo
+    A = r*7.5 # Llegadas por segundo
     
 
-    output = subprocess.check_output("./Erlang.tcl 50 "+str(y), shell=True)
+    output = subprocess.check_output("./Erlang.tcl 50 "+str(A), shell=True)
     output_str = output.decode('utf-8')
-    puntos_y.append([(float(num)) for num in output_str.split()][0])
+    valor = [(float(num)) for num in output_str.split()][0]
+    puntos_y.append(valor)
     print(puntos_y)
 
 # Crear la figura y los ejes
