@@ -20,8 +20,8 @@ enlaces = {2, 4, 6, 10}
 # # La tolerancia que se calculará así
 # bi = 1
 # t = min(1,(1-bi)/(bi)+0.002)
-
-
+Bmin = 0
+t = TOLERANCIA_RELATIVA
 for i in range(0,5):
 
     f = open("config_"+str(i)+".cfg","w")
@@ -31,7 +31,7 @@ for i in range(0,5):
     for enl in enlaces:
 
         # Funcion de tiempos médios lamda
-        r = 1-(0.04)*i
+        r = 1-0.04*i
         y = (r + 15)/S # Llegadas por segundo
         # Luego el tiempo entre llegadas es 1/y
 
@@ -41,23 +41,26 @@ for i in range(0,5):
             str(j) + "\n\n" 
         ) 
         j += 1
+
+    if (i != 0):
+        t = min(1,((1-Bmin)*TOLERANCIA_RELATIVA)/Bmin)
+    
     i +=1
     f.close()
 
-    ## Para ejecutar o fichero 
-    # os.system("./SimRedMMkk -s " + str(SEMILLA) + " -q " + str(CALIDAD) + " -t " + str(TOLERANCIA_RELATIVA) "config_" + str(i) + ".cfg -c")
+    os.system("./SimRedMMkk -s " + str(SEMILLA) + " -q " + str(CALIDAD) + " -t " + str(TOLERANCIA_RELATIVA) + " config_" + str(i) + ".cfg -c")
 
-# os.system("rm *.cfg")
 
+        
 puntos_x = []
 puntos_y = []
 for i in range(0,6):
     puntos_x.append(i)
     ri = 1-(0.04)*i
-    A = ri*A_0/2 # Llegadas por segundo
+    A = ri*A_0*2 # Llegadas por segundo
     
 
-    output = subprocess.check_output("./Erlang.tcl 50 "+str(A), shell=True)
+    output = subprocess.check_output("./Erlang.tcl "+str(M)+" "+str(A), shell=True)
     output_str = output.decode('utf-8')
     valor = [(float(num)) for num in output_str.split()][0]
     puntos_y.append(valor)
@@ -71,5 +74,6 @@ plt.savefig('diagrama-dispersion.png')
 # Mostrar el gráfico
 
 plt.yscale('log')
-           
+plt.ylabel('Probabilidad de bloqueo')
+plt.xlabel('Valor de i')           
 plt.show()
