@@ -13,19 +13,17 @@ A_0 = 15 # A para i = 0
 
 
 #Nodos que se utilizan
-enlaces = [
-         [[0],[1]],
-        [[2],[3],4],
-         [6,6],
-        [7,8,9],
-        [10,11]
-        ]
+enlaces = {'a':[0,1,10,11],
+           'b':[2,7,4,9],
+           'c':[3,8],
+           'd':[5,6]}
 
 nodos = [['A','B','C'],
          ['H','I','D'],
          ['G','F','E']]
 
 # Fin configuracion
+
 
 
 
@@ -39,6 +37,46 @@ for nod in nodos:
         y += 1
     x += 1
 
+
+## Rutas a un salto
+rutas_1_salto = []
+enalce = 0
+for nod_1 in nodos_x_y:
+    for nod_2 in nodos_x_y:
+        if nod_2 != nod_1:
+            distancia = abs(nod_1[0]-nod_2[0])+abs(nod_1[1]-nod_2[1])
+            if distancia == 1:
+                ruta_1 = [nod_1,nod_2]  
+                ruta_2 = [nod_2,nod_1]
+                if ruta_1 not in rutas_1_salto and ruta_2 not in rutas_1_salto:
+                    rutas_1_salto.append(ruta_1)
+
+### Poniendo rutas a un salto en el fichero de configuración
+f = open("config_"+str(0)+".cfg","w")
+f.write(
+    (str(M) + " ") * len(enlaces)+ "\n" +
+    str(len(enlaces)) + "\n\n"+
+    "#Rutas de un salto\n\n")
+for ruta in rutas_1_salto:
+    f.write( 
+        "## Ruta de " + nodos[ruta[0][0]][ruta[0][1]] + "->" + nodos[ruta[1][0]][ruta[1][1]]  + "\n"+
+        "M 8\n" +
+        "M 120\n"
+    )
+        # str(rutas_1_salto.index(ruta)) + "\n\n"
+    for i in enlaces:
+        if rutas_1_salto.index(ruta) in enlaces[i]:
+            f.write(
+                str(rutas_1_salto.index(ruta)) + " " + i + "\n\n"
+
+            )
+
+
+
+
+f.close()
+exit(0)
+## Rutas 2 saltos
 rutas_2_saltos = [] ### Cuantas rutas de dos saltos tenemos nos dan 14
 for nod_1 in nodos_x_y:
     for nod_2 in nodos_x_y:
@@ -61,6 +99,7 @@ for ruta in rutas_2_saltos:
     f.write(
         "M 16\n" +
         "M 120\n"
+
     )
 
 
