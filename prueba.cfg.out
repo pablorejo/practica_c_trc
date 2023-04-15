@@ -62,26 +62,16 @@ Probabilidad de bloqueo estimada: 0.125224
 	Minimum sample: 0
 
 Trafico/s promediado/s en g:
-Probabilidad de bloqueo estimada: 0.000106389
-	Confidence interval 1: (7.98621e-05,0.000132915) with coverage: 0.95
-	Confidence interval 2: (-0.0018934,0.00210618) with coverage: 0.999998
-	Number of samples: 1926895
-	Variance: 0.000106378
-	Standard deviation: 0.0103139
+Probabilidad de bloqueo estimada: 0.000105855
+	Confidence interval 1: (8.68788e-05,0.000124832) with coverage: 0.95
+	Confidence interval 2: (-0.00189393,0.00210564) with coverage: 0.999998
+	Number of samples: 3854320
+	Variance: 0.000105844
+	Standard deviation: 0.0102881
 	Maximum sample: 1
 	Minimum sample: 0
 
 Trafico/s promediado/s en h:
-Probabilidad de bloqueo estimada: 0.000105322
-	Confidence interval 1: (7.88049e-05,0.000131839) with coverage: 0.95
-	Confidence interval 2: (-0.00189447,0.00210511) with coverage: 0.999998
-	Number of samples: 1927425
-	Variance: 0.000105311
-	Standard deviation: 0.0102621
-	Maximum sample: 1
-	Minimum sample: 0
-
-Trafico/s promediado/s en i:
 Probabilidad de bloqueo estimada: 0
 	Confidence interval 1: (0,0) with coverage: 0.95
 	Confidence interval 2: (-nan,-nan) with coverage: 1
@@ -91,7 +81,7 @@ Probabilidad de bloqueo estimada: 0
 	Maximum sample: 0
 	Minimum sample: 0
 
-Trafico/s promediado/s en j:
+Trafico/s promediado/s en i:
 Probabilidad de bloqueo estimada: 0.121349
 	Confidence interval 1: (0.120565,0.122133) with coverage: 0.95
 	Confidence interval 2: (0.119592,0.123107) with coverage: 0.999965
@@ -101,7 +91,7 @@ Probabilidad de bloqueo estimada: 0.121349
 	Maximum sample: 1
 	Minimum sample: 0
 
-Trafico/s promediado/s en k:
+Trafico/s promediado/s en j:
 Probabilidad de bloqueo estimada: 0.00404096
 	Confidence interval 1: (0.00386621,0.0042157) with coverage: 0.95
 	Confidence interval 2: (0.00204904,0.00603287) with coverage: 0.999998
