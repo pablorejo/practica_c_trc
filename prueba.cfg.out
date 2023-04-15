@@ -1,0 +1,83 @@
+Semilla: 333
+Tolerancia relativa: 0.002
+
+Trafico/s promediado/s en a:
+Probabilidad de bloqueo estimada: 0.113727
+	Confidence interval 1: (0.112855,0.1146) with coverage: 0.95
+	Confidence interval 2: (0.111955,0.1155) with coverage: 0.999823
+	Number of samples: 2124580
+	Variance: 0.100794
+	Standard deviation: 0.31748
+	Maximum sample: 1
+	Minimum sample: 0
+
+Trafico/s promediado/s en b:
+Probabilidad de bloqueo estimada: 0
+	Confidence interval 1: (0,0) with coverage: 0.95
+	Confidence interval 2: (-nan,-nan) with coverage: 1
+	Number of samples: 1062986
+	Variance: 0
+	Standard deviation: 0
+	Maximum sample: 0
+	Minimum sample: 0
+
+Trafico/s promediado/s en c:
+Probabilidad de bloqueo estimada: 0.212339
+	Confidence interval 1: (0.210911,0.213768) with coverage: 0.95
+	Confidence interval 2: (0.210764,0.213915) with coverage: 0.968315
+	Number of samples: 532426
+	Variance: 0.167252
+	Standard deviation: 0.408964
+	Maximum sample: 1
+	Minimum sample: 0
+
+Trafico/s promediado/s en d:
+Probabilidad de bloqueo estimada: 0.109913
+	Confidence interval 1: (0.10916,0.110667) with coverage: 0.95
+	Confidence interval 2: (0.108133,0.111693) with coverage: 0.999994
+	Number of samples: 2127513
+	Variance: 0.0978324
+	Standard deviation: 0.312782
+	Maximum sample: 1
+	Minimum sample: 0
+
+Trafico/s promediado/s en e:
+Probabilidad de bloqueo estimada: 0
+	Confidence interval 1: (0,0) with coverage: 0.95
+	Confidence interval 2: (-nan,-nan) with coverage: 1
+	Number of samples: 4250613
+	Variance: 0
+	Standard deviation: 0
+	Maximum sample: 0
+	Minimum sample: 0
+
+Trafico/s promediado/s en f:
+Probabilidad de bloqueo estimada: 0
+	Confidence interval 1: (0,0) with coverage: 0.95
+	Confidence interval 2: (-nan,-nan) with coverage: 1
+	Number of samples: 4252453
+	Variance: 0
+	Standard deviation: 0
+	Maximum sample: 0
+	Minimum sample: 0
+
+Trafico/s promediado/s en g:
+Probabilidad de bloqueo estimada: 0.0568304
+	Confidence interval 1: (0.0562582,0.0574025) with coverage: 0.95
+	Confidence interval 2: (0.054944,0.0587167) with coverage: 0.999998
+	Number of samples: 2126856
+	Variance: 0.0536007
+	Standard deviation: 0.231518
+	Maximum sample: 1
+	Minimum sample: 0
+
+Trafico/s promediado/s en h:
+Probabilidad de bloqueo estimada: 0.0571274
+	Confidence interval 1: (0.0565621,0.0576926) with coverage: 0.95
+	Confidence interval 2: (0.0552416,0.0590131) with coverage: 0.999998
+	Number of samples: 2128542
+	Variance: 0.0538639
+	Standard deviation: 0.232086
+	Maximum sample: 1
+	Minimum sample: 0
+
