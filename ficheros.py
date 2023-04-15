@@ -10,15 +10,100 @@ TOLERANCIA_RELATIVA = 0.002
 CALIDAD = 0.95
 A_0 = 15 # A para i = 0
 
-# Vamos a definir los tipos de enlaces y el numero de traficos ofrecidos
-enlaces = {2, 4, 6, 10}
+
 
 #Nodos que se utilizan
-nodos = {0, 1 ,2 ,3 ,4 ,5 ,6 ,7 ,8 ,9 ,10 ,11} 
+enlaces = [
+         [[0],[1]],
+        [[2],[3],4],
+         [6,6],
+        [7,8,9],
+        [10,11]
+        ]
+
+nodos = [['A','B','C'],
+         ['H','I','D'],
+         ['G','F','E']]
+
 # Fin configuracion
 
 
 
+### Creamos la matriz de nodos
+nodos_x_y = []
+x = 0
+for nod in nodos:
+    y = 0
+    for no in nod:
+        nodos_x_y.append([x,y])
+        y += 1
+    x += 1
+
+rutas_2_saltos = [] ### Cuantas rutas de dos saltos tenemos nos dan 14
+for nod_1 in nodos_x_y:
+    for nod_2 in nodos_x_y:
+        if nod_2 != nod_1:
+            distancia = abs(nod_1[0]-nod_2[0])+abs(nod_1[1]-nod_2[1])
+            if distancia == 2:
+                ruta_1 = [nod_1,nod_2]  
+                ruta_2 = [nod_2,nod_1]
+                if ruta_1 not in rutas_2_saltos and ruta_2 not in rutas_2_saltos:
+                    rutas_2_saltos.append(ruta_1)
+
+
+f = open("config_"+str(0)+".cfg","w")
+f.write(
+    (str(M) + " ") * len(enlaces)+ "\n" +
+    str(len(enlaces)) + "\n\n"+
+    "#Rutas de un salto\n")
+
+for ruta in rutas_2_saltos:
+    f.write(
+        "M 16\n" +
+        "M 120\n"
+    )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Poner las rutas a un salto
+j = 0
+i = 0
+for enl in enlaces:
+    # Funcion de tiempos médios lamda
+    for ln in enl:
+        r = 1-0.04*i
+        y = (r*A_0)/S # Llegadas por segundo
+        # Luego el tiempo entre llegadas es 1/y
+        f.write(
+            "M "+ str(1/y) + "\n" +
+            "M "+ str(S)+"\n" +
+            str(j) + "\n\n" 
+        ) 
+        j += 1
+
+while True:
+    y = 0
+    for nod in nodos:
+        x = 0
+        for no in nod:
+            
+            x += 1
+            no.index
+        y += 1
+    break
+
+exit(0)
 # # La tolerancia que se calculará así
 # bi = 1
 # t = min(1,(1-bi)/(bi)+0.002)
@@ -38,7 +123,7 @@ for i in range(0,5):
         # Luego el tiempo entre llegadas es 1/y
 
         f.write(
-            "M "+ str(2/enl*y) + "\n" +
+            "M "+ str(2/y) + "\n" +
             "M "+ str(S)+"\n" +
             str(j) + "\n\n" 
         ) 
