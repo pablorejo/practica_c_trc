@@ -12,8 +12,10 @@ A_0 = 15 # A para i = 0
 
 # Vamos a definir los tipos de enlaces y el numero de traficos ofrecidos
 enlaces = {2, 4, 6, 10}
-# Fin configuracion
 
+#Nodos que se utilizan
+nodos = {0, 1 ,2 ,3 ,4 ,5 ,6 ,7 ,8 ,9 ,10 ,11} 
+# Fin configuracion
 
 
 
@@ -36,7 +38,7 @@ for i in range(0,5):
         # Luego el tiempo entre llegadas es 1/y
 
         f.write(
-            "M "+ str(enl/y) + "\n" +
+            "M "+ str(2/enl*y) + "\n" +
             "M "+ str(S)+"\n" +
             str(j) + "\n\n" 
         ) 
@@ -77,5 +79,5 @@ plt.savefig('diagrama-dispersion.png')
 
 plt.yscale('log')
 plt.ylabel('Probabilidad de bloqueo')
-plt.xlabel('Valor de i')           
+plt.xlabel('Valor de i')
 plt.show()
