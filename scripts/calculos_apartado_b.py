@@ -2,15 +2,15 @@ import numpy as np
 import subprocess
 
 
-i = 6
-m = 50
-num_traficos_distintos_1_salto = 2
+i = 6  
+m = 50 
+num_traficos_distintos_1_salto = 2 
 num_traficos_distintos_2_salto = 3 
-B_1_salto = np.empty([num_traficos_distintos_1_salto, i], dtype = float)
-B_2_salto = np.empty([num_traficos_distintos_2_salto, i], dtype = float)
-A_lista = np.empty([i, num_traficos_distintos_1_salto], dtype = float)
-r = np.empty([i], dtype = float)
-peticiones_segundo = np.empty([i], dtype = float)
+B_1_salto = np.empty([num_traficos_distintos_1_salto, i], dtype = float) 
+B_2_salto = np.empty([num_traficos_distintos_2_salto, i], dtype = float) 
+A_lista = np.empty([i, num_traficos_distintos_1_salto], dtype = float) 
+r = np.empty([i], dtype = float) 
+peticiones_segundo = np.empty([i], dtype = float) 
 
 
 #Cálculos 1 salto
@@ -24,7 +24,7 @@ for n in range(i):
             x = 6
         A = x*peticiones_segundo[n]
         A_lista[n][trafico] = A
-        resultado = subprocess.run(["./Erlang.tcl",str(m), str(A)], capture_output=True, text=True)
+        resultado = subprocess.run(["../Erlang.tcl",str(m), str(A)], capture_output=True, text=True)
         B = resultado.stdout.split()[0]
         B_1_salto[trafico][n] = B
 
