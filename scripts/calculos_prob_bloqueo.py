@@ -24,7 +24,7 @@ for n in range(i):
             x = 3
         A = (x + trafico)*peticiones_segundo[n]
         A_lista[n][trafico] = A
-        resultado = subprocess.run(["./Erlang.tcl",str(m), str(A)], capture_output=True, text=True)
+        resultado = subprocess.run(["../Erlang.tcl",str(m), str(A)], capture_output=True, text=True)
         B = resultado.stdout.split()[0]
         B_1_salto[trafico][n] = B
 
