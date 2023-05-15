@@ -1,12 +1,6 @@
 import subprocess
-# Configurarión
-S = 120 #segundos Tiempo de servicio demandado
-M = 50 # Número de recursos 2gb/40mb
-SEMILLA = 333
-TOLERANCIA_RELATIVA = 0.002
-CALIDAD = 0.95
-A_0 = 15 # A para i = 0
 
+import globales
 
 def obtener_probabilidad_bloqueo(nombre_archivo):
     with open(nombre_archivo, 'r') as archivo:
@@ -24,16 +18,16 @@ def obtener_probabilidad_bloqueo(nombre_archivo):
 
 
 
-tolerancia = TOLERANCIA_RELATIVA
+tolerancia = globales.TOLERANCIA_RELATIVA
 for i in range(0, 5):   
     print("Tolerancia = " + str(tolerancia))
     
-    subprocess.run(["../SimRedMMkk","-s"+str(S),"-q" + str(CALIDAD),"-t" + str(tolerancia),"-c","../conf/axial/axial_i_"+str(i)+".cfg"], capture_output=False)
+    subprocess.run(["../SimRedMMkk","-s"+str(S),"-q" + str(globales.CALIDAD),"-t" + str(tolerancia),"-c","../conf/axial/axial_i_"+str(i)+".cfg"], capture_output=True)
 
-    subprocess.run(["mv","../conf/axial/axial_i_"+str(i)+".cfg.out", "../out/axial/"], capture_output=False)
+    subprocess.run(["mv","../conf/axial/axial_i_"+str(i)+".cfg.out", "../out/axial/"], capture_output=True)
 
     Pb = obtener_probabilidad_bloqueo("../out/axial/axial_i_"+str(i)+".cfg.out")
 
-    tolerancia = min(1,(1-Pb)*TOLERANCIA_RELATIVA/Pb)
+    tolerancia = min(1,(1-Pb)*globales.TOLERANCIA_RELATIVA/Pb)
     print("Pb max = " + str(Pb))
 

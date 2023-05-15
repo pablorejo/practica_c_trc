@@ -1,3 +1,5 @@
+import globales
+
 def cambiar_lineas(archivo_entrada, archivo_salida, Y):
     with open(archivo_entrada, 'r') as archivo:
         lineas = archivo.readlines()
@@ -16,7 +18,7 @@ def cambiar_lineas(archivo_entrada, archivo_salida, Y):
 
 
 # tipos = ["axial", "destrogiro","exhaustivo","exhaustivo_con_reserva"]
-tipos = ["axial"]
+tipos = globales.tipos
 
 for tip in tipos:
     archivo_entrada = "../conf/"+tip+"/prueba.cfg"  # Ruta del archivo de entrada
