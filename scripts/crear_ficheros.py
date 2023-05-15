@@ -13,17 +13,23 @@ def cambiar_lineas(archivo_entrada, archivo_salida, Y):
     print("Archivo modificado con éxito.")
 
 # Ejemplo de uso
-archivo_entrada = "../conf/axial/prueba.cfg"  # Ruta del archivo de entrada
 
-i = 0
-while 1:
-    archivo_salida = "../conf/axial/axial_i_" + str(i) + ".cfg"  # Ruta del archivo de salida
-    r = 1- 0.04*i
-    Y = 120/(r * 15)
-    cambiar_lineas(archivo_entrada, archivo_salida, Y)
-    i +=1
-    if i> 5:
-        break
-    
+
+# tipos = ["axial", "destrogiro","exhaustivo","exhaustivo_con_reserva"]
+tipos = ["axial"]
+
+for tip in tipos:
+    archivo_entrada = "../conf/"+tip+"/prueba.cfg"  # Ruta del archivo de entrada
+
+    i = 0
+    while 1:
+        archivo_salida = "../conf/"+tip+"/"+tip+"_i_" + str(i) + ".cfg"  # Ruta del archivo de salida
+        r = 1- 0.04*i
+        Y = 120/(r * 15)
+        cambiar_lineas(archivo_entrada, archivo_salida, Y)
+        i +=1
+        if i> 5:
+            break
+        
 
 print("Ficheros creados")
