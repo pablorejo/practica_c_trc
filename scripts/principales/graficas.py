@@ -71,12 +71,12 @@ for tip in tipos:
         # Crear la gráfica de barras
         r = 1- 0.04*j
         Y = 120/(r * 15)
-        plt.plot(x, matriz_probab[0][j], label="T = " + str(Y) + " s")
-
+        plt.plot(x, matriz_probab[indice][j], label="T = " + str(Y) + " s")
+        print(matriz_probab[indice])
         # Agregar los intervalos de confianza como líneas de error
-        for i, intervalo in enumerate(matriz_interval[0][j]):
+        for i, intervalo in enumerate(matriz_interval[indice][j]):
             plt.plot([x[i], x[i]], intervalo)
-        
+
 
 
 

@@ -25,13 +25,13 @@ if [ ! -d "log" ]; then
 fi
 
 
-cd scripts
+cd scripts/principales
 
-python3 crear_ficheros.py > ../log/crear_ficheros.log
-python3 ejecutar.py > ../log/ejecutar.log
-python3 graficas.py > ../log/graficas.log
+python3 crear_ficheros.py > ../../log/crear_ficheros.log
+python3 ejecutar.py > ../../log/ejecutar.log
+python3 graficas.py > ../../log/graficas.log
 
-cd ..
+cd ../..
 
 
 
