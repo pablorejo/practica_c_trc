@@ -30,6 +30,10 @@ Si hablamos de un solo salto tendremos que se cumple siempre que:
 
 Por lo tanto la probabilidad de bloqueo en  ese enlace será de E(50,A)
 
+## Fichero de configuración 
+M 1/lambda
+M S
+
 
 ### Para ejecutarlo 
 `IMPORTANTE`: Necesitas [instalar matplotlib]
