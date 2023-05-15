@@ -34,7 +34,7 @@ for tip in tipos:
     intervalos = []
     probabilidades = [] 
     for i in range (0,5):
-        inter,prob = obtener_probabilidad_bloqueo("../out/"+ tip +"/" +tip+ "_i_" +str(i)+ ".cfg.out",i)
+        inter,prob = obtener_probabilidad_bloqueo(globales.out+ tip +"/" +tip+ "_i_" +str(i)+ ".cfg.out",i)
         intervalos.append(inter)
         probabilidades.append(prob)
     matriz_intervalos.append(intervalos)
@@ -61,9 +61,7 @@ for i in matriz_probabilidades:
 indice = 0
 # Para crear varias graficas para los distintos apartados axial, destrogiro
 label = abecedario = list(string.ascii_lowercase)
-print(label)
 for tip in tipos:
-
     # Crear un arreglo para los índices de las barras
     x = np.arange(len(matriz_probab[indice][0]))
 
@@ -88,7 +86,7 @@ for tip in tipos:
     plt.title('Probabilidades del trafico de tipo ' + str(tip))
     plt.legend()
     # Mostrar la gráfica
-    plt.show()
+    plt.show()  
     indice += 1
 
 
