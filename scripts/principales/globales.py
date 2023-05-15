@@ -5,7 +5,7 @@ TOLERANCIA_RELATIVA = 0.002
 CALIDAD = 0.95
 A_0 = 15 # A para i = 0
 
-tipos = ["axial"]
+tipos = ["axial", "destrogiro"]
 conf = "../../conf/"
 fichero_conf = "prueba.cfg"
 out = "../../out/"
