@@ -13,7 +13,7 @@ r = np.empty([i], dtype = float)
 peticiones_segundo = np.empty([i], dtype = float)
 
 
-##Calculos 1 salto
+#Cálculos 1 salto
 
 for n in range(i):
     r[n] = 1 - 0.04*n
@@ -28,6 +28,8 @@ for n in range(i):
         B = resultado.stdout.split()[0]
         B_1_salto[trafico][n] = B
 
+#Cálculos 2 saltos
+
 for n in range(i):
     B_2_salto[0][n] = 1 - ((1 - B_1_salto[1][n])*(1 - B_1_salto[3][n]))
     B_2_salto[1][n] = 1 - ((1 - B_1_salto[0][n])*(1 - B_1_salto[0][n]))
@@ -36,10 +38,10 @@ for n in range(i):
     B_2_salto[4][n] = 1 - ((1 - B_1_salto[2][n])*(1 - B_1_salto[2][n]))
     B_2_salto[5][n] = 1 - ((1 - B_1_salto[2][n])*(1 - B_1_salto[3][n]))
 
-print("Valores de r \n")
+print("\nValores de r \n")
 print(r)
 print("\n")
-print("Valores de lambda \n")
+print("Valores de lambda sin dividir por S\n")
 print(peticiones_segundo)
 print("\n")
 print("Valores de A \n")

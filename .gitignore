@@ -1,5 +1,5 @@
 # **.gitignore
-**.cfg
-**.out
-**.png
-**.odt*
+*.cfg
+*.out
+*.png
+*.odt*
