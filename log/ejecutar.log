@@ -1,50 +1,61 @@
+axial
 Tolerancia = 0.002
 ../../conf/axial/axial_i_0.cfg
 ../../conf/axial/axial_i_0.cfg
 ../../out/axial/axial_i_0.cfg.out
-Pb max = 0.121748
-Tolerancia = 0.014427374576995106
+Pb max = 0.121851
+Tolerancia = 0.014413488604935534
 ../../conf/axial/axial_i_1.cfg
 ../../conf/axial/axial_i_1.cfg
 ../../out/axial/axial_i_1.cfg.out
-Pb max = 0.109934
-Tolerancia = 0.01619273382211145
+Pb max = 0.106719
+Tolerancia = 0.016740805292403415
 ../../conf/axial/axial_i_2.cfg
 ../../conf/axial/axial_i_2.cfg
 ../../out/axial/axial_i_2.cfg.out
-Pb max = 0.084338
-Tolerancia = 0.021714102776921436
+Pb max = 0.0838798
+Tolerancia = 0.02184364292714098
 ../../conf/axial/axial_i_3.cfg
 ../../conf/axial/axial_i_3.cfg
 ../../out/axial/axial_i_3.cfg.out
-Pb max = 0.0659328
-Tolerancia = 0.028333915744515627
+Pb max = 0.0572926
+Tolerancia = 0.03290852221752897
 ../../conf/axial/axial_i_4.cfg
 ../../conf/axial/axial_i_4.cfg
 ../../out/axial/axial_i_4.cfg.out
-Pb max = 0.0482812
-Tolerancia = 0.0394239911186963
-../../conf/destrogiro/destrogiro_i_0.cfg
-../../conf/destrogiro/destrogiro_i_0.cfg
-../../out/destrogiro/destrogiro_i_0.cfg.out
-Pb max = 0.0110445
-Tolerancia = 0.1790856082212866
-../../conf/destrogiro/destrogiro_i_1.cfg
-../../conf/destrogiro/destrogiro_i_1.cfg
-../../out/destrogiro/destrogiro_i_1.cfg.out
-Pb max = 0.00432099
-Tolerancia = 0.4608568915919732
-../../conf/destrogiro/destrogiro_i_2.cfg
-../../conf/destrogiro/destrogiro_i_2.cfg
-../../out/destrogiro/destrogiro_i_2.cfg.out
-Pb max = 0.00167645
+Pb max = 0.0560446
+Tolerancia = 0.03368586447222391
+../../conf/axial/axial_i_5.cfg
+../../conf/axial/axial_i_5.cfg
+../../out/axial/axial_i_5.cfg.out
+Pb max = 0.0354009
+con_reserva
+Tolerancia = 0.002
+../../conf/con_reserva/con_reserva_i_0.cfg
+../../conf/con_reserva/con_reserva_i_0.cfg
+../../out/con_reserva/con_reserva_i_0.cfg.4k.out
+Pb max = 0.0161627
+Tolerancia = 0.12174170157213834
+../../conf/con_reserva/con_reserva_i_1.cfg
+../../conf/con_reserva/con_reserva_i_1.cfg
+../../out/con_reserva/con_reserva_i_1.cfg.4k.out
+Pb max = 0.0140969
+Tolerancia = 0.13987516404315842
+../../conf/con_reserva/con_reserva_i_2.cfg
+../../conf/con_reserva/con_reserva_i_2.cfg
+../../out/con_reserva/con_reserva_i_2.cfg.4k.out
+Pb max = 0.00756303
+Tolerancia = 0.26244427696306905
+../../conf/con_reserva/con_reserva_i_3.cfg
+../../conf/con_reserva/con_reserva_i_3.cfg
+../../out/con_reserva/con_reserva_i_3.cfg.4k.out
+Pb max = 0.00262467
+Tolerancia = 0.7600005562604061
+../../conf/con_reserva/con_reserva_i_4.cfg
+../../conf/con_reserva/con_reserva_i_4.cfg
+../../out/con_reserva/con_reserva_i_4.cfg.4k.out
+Pb max = 0.00084317
 Tolerancia = 1
-../../conf/destrogiro/destrogiro_i_3.cfg
-../../conf/destrogiro/destrogiro_i_3.cfg
-../../out/destrogiro/destrogiro_i_3.cfg.out
-Pb max = 0.00376471
-Tolerancia = 0.529249418945948
-../../conf/destrogiro/destrogiro_i_4.cfg
-../../conf/destrogiro/destrogiro_i_4.cfg
-../../out/destrogiro/destrogiro_i_4.cfg.out
-Pb max = 0.000648088
+../../conf/con_reserva/con_reserva_i_5.cfg
+../../conf/con_reserva/con_reserva_i_5.cfg
+../../out/con_reserva/con_reserva_i_5.cfg.4k.out

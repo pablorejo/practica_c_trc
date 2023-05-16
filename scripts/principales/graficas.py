@@ -34,7 +34,10 @@ for tip in tipos:
     intervalos = []
     probabilidades = [] 
     for i in range (0,5):
-        inter,prob = obtener_probabilidad_bloqueo(globales.out+ tip +"/" +tip+ "_i_" +str(i)+ ".cfg.out",i)
+        if(tip != "con_reserva"):
+            inter,prob = obtener_probabilidad_bloqueo(globales.out+ tip +"/" +tip+ "_i_" +str(i)+ ".cfg.out",i)
+        else:
+            inter,prob = obtener_probabilidad_bloqueo(globales.out+ tip +"/" +tip+ "_i_" +str(i)+ ".cfg.4k.out",i)
         intervalos.append(inter)
         probabilidades.append(prob)
     matriz_intervalos.append(intervalos)

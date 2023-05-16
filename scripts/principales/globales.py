@@ -3,9 +3,10 @@ M = 50 # Número de recursos 2gb/40mb
 SEMILLA = 333
 TOLERANCIA_RELATIVA = 0.002
 CALIDAD = 0.95
+CIRCUITOS_RESERVADOS = 4
 A_0 = 15 # A para i = 0
 
-tipos = ["axial", "destrogiro"]
+tipos = ["axial", "con_reserva", "destrogiro", "exhaustivo"]
 conf = "../../conf/"
 fichero_conf = "prueba.cfg"
 out = "../../out/"
