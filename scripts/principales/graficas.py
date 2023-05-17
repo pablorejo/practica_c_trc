@@ -87,9 +87,9 @@ for tip in tipos:
         # Obtener los valores del eje y
         valores_y = matriz_probab[indice][j]
         
-        # Imprimir los valores del eje y
-        for i, valor in enumerate(valores_y):
-            plt.text(x[i], valor, str(valor), ha='center', va='bottom')
+        # # Imprimir los valores del eje y
+        # for i, valor in enumerate(valores_y):
+        #     plt.text(x[i], valor, str(valor), ha='center', va='bottom')
 
 
 
