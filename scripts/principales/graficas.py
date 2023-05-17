@@ -66,8 +66,10 @@ indice = 0
 abecedario = list(string.ascii_lowercase)
 for tip in tipos:
     # Crear un arreglo para los índices de las barras
+    plt.figure()
     x = np.arange(len(matriz_probab[indice][0]))
 
+    print("\n\nTipo " + tip + ": ")
     # Para poner en la misma gráfica los procesos
     for j in range(len(matriz_probab[indice])):
         
@@ -75,21 +77,31 @@ for tip in tipos:
         r = 1- 0.04*j
         Y = 120/(r * 15)
         plt.plot(x, matriz_probab[indice][j], label="Trafico = " + str(abecedario[j]))
+        
+        print(" Trafico = " + str(abecedario[j]))
         print(matriz_probab[indice])
         # Agregar los intervalos de confianza como líneas de error
         for i, intervalo in enumerate(matriz_interval[indice][j]):
             plt.plot([x[i], x[i]], intervalo)
+            
+        # Obtener los valores del eje y
+        valores_y = matriz_probab[indice][j]
+        
+        # Imprimir los valores del eje y
+        for i, valor in enumerate(valores_y):
+            plt.text(x[i], valor, str(valor), ha='center', va='bottom')
 
 
 
-
+    # plt.ylim(0, max(valores_y) * 2)  # Aumenta
     # Configuración de la gráfica
     plt.xlabel('Índice')
     plt.ylabel('Probabilidad')
     plt.title('Probabilidades del trafico de tipo ' + str(tip))
     plt.legend()
     # Mostrar la gráfica
-    plt.show()  
     indice += 1
+    plt.savefig(globales.image + tip)
+plt.show()  
 
 

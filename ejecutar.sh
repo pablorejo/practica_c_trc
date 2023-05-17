@@ -24,6 +24,10 @@ if [ ! -d "log" ]; then
     mkdir log
 fi
 
+if [ ! -d "img" ]; then
+    mkdir img
+fi
+
 
 cd scripts/principales
 
