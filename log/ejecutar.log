@@ -1,35 +1,35 @@
 4
 exhaustivo
 Tolerancia = 0.002
-../../conf/axial/axial_i_0.cfg
-../../conf/axial/axial_i_0.cfg
-../../out/axial/axial_i_0.cfg.out
-Pb max = 0.227349
-Tolerancia = 0.0067970477107882595
-../../conf/axial/axial_i_1.cfg
-../../conf/axial/axial_i_1.cfg
-../../out/axial/axial_i_1.cfg.out
-Pb max = 0.195892
-Tolerancia = 0.008209707389786209
-../../conf/axial/axial_i_2.cfg
-../../conf/axial/axial_i_2.cfg
-../../out/axial/axial_i_2.cfg.out
-Pb max = 0.15421
-Tolerancia = 0.010969327540367032
-../../conf/axial/axial_i_3.cfg
-../../conf/axial/axial_i_3.cfg
-../../out/axial/axial_i_3.cfg.out
-Pb max = 0.124344
-Tolerancia = 0.014084410988869589
-../../conf/axial/axial_i_4.cfg
-../../conf/axial/axial_i_4.cfg
-../../out/axial/axial_i_4.cfg.out
-Pb max = 0.0840547
-Tolerancia = 0.02179402936421164
-../../conf/axial/axial_i_5.cfg
-../../conf/axial/axial_i_5.cfg
-../../out/axial/axial_i_5.cfg.out
-Pb max = 0.0590909
+../../conf/exhaustivo/exhaustivo_i_0.cfg
+../../conf/exhaustivo/exhaustivo_i_0.cfg
+../../out/exhaustivo/exhaustivo_i_0.cfg.out
+Pb max = 0.12406
+Tolerancia = 0.014121231662098983
+../../conf/exhaustivo/exhaustivo_i_1.cfg
+../../conf/exhaustivo/exhaustivo_i_1.cfg
+../../out/exhaustivo/exhaustivo_i_1.cfg.out
+Pb max = 0.105537
+Tolerancia = 0.01695069975458844
+../../conf/exhaustivo/exhaustivo_i_2.cfg
+../../conf/exhaustivo/exhaustivo_i_2.cfg
+../../out/exhaustivo/exhaustivo_i_2.cfg.out
+Pb max = 0.0855843
+Tolerancia = 0.021368772076186867
+../../conf/exhaustivo/exhaustivo_i_3.cfg
+../../conf/exhaustivo/exhaustivo_i_3.cfg
+../../out/exhaustivo/exhaustivo_i_3.cfg.out
+Pb max = 0.0569444
+Tolerancia = 0.0331219786317882
+../../conf/exhaustivo/exhaustivo_i_4.cfg
+../../conf/exhaustivo/exhaustivo_i_4.cfg
+../../out/exhaustivo/exhaustivo_i_4.cfg.out
+Pb max = 0.0567423
+Tolerancia = 0.033247073171161545
+../../conf/exhaustivo/exhaustivo_i_5.cfg
+../../conf/exhaustivo/exhaustivo_i_5.cfg
+../../out/exhaustivo/exhaustivo_i_5.cfg.out
+Pb max = 0.0268918
 con_reserva
 Tolerancia = 0.002
 ../../conf/con_reserva/con_reserva_i_0.cfg
@@ -61,6 +61,37 @@ Tolerancia = 0.03575387118756689
 ../../conf/con_reserva/con_reserva_i_5.cfg
 ../../out/con_reserva/con_reserva_i_5.cfg.4k.out
 Pb max = 0.0341382
+axial
+Tolerancia = 0.002
+../../conf/axial/axial_i_0.cfg
+../../conf/axial/axial_i_0.cfg
+../../out/axial/axial_i_0.cfg.out
+Pb max = 0.227349
+Tolerancia = 0.0067970477107882595
+../../conf/axial/axial_i_1.cfg
+../../conf/axial/axial_i_1.cfg
+../../out/axial/axial_i_1.cfg.out
+Pb max = 0.195892
+Tolerancia = 0.008209707389786209
+../../conf/axial/axial_i_2.cfg
+../../conf/axial/axial_i_2.cfg
+../../out/axial/axial_i_2.cfg.out
+Pb max = 0.15421
+Tolerancia = 0.010969327540367032
+../../conf/axial/axial_i_3.cfg
+../../conf/axial/axial_i_3.cfg
+../../out/axial/axial_i_3.cfg.out
+Pb max = 0.124344
+Tolerancia = 0.014084410988869589
+../../conf/axial/axial_i_4.cfg
+../../conf/axial/axial_i_4.cfg
+../../out/axial/axial_i_4.cfg.out
+Pb max = 0.0840547
+Tolerancia = 0.02179402936421164
+../../conf/axial/axial_i_5.cfg
+../../conf/axial/axial_i_5.cfg
+../../out/axial/axial_i_5.cfg.out
+Pb max = 0.0590909
 destrogiro
 Tolerancia = 0.002
 ../../conf/destrogiro/destrogiro_i_0.cfg
@@ -92,34 +123,3 @@ Tolerancia = 0.024352926294818094
 ../../conf/destrogiro/destrogiro_i_5.cfg
 ../../out/destrogiro/destrogiro_i_5.cfg.out
 Pb max = 0.0508333
-exhaustivo
-Tolerancia = 0.002
-../../conf/exhaustivo/exhaustivo_i_0.cfg
-../../conf/exhaustivo/exhaustivo_i_0.cfg
-../../out/exhaustivo/exhaustivo_i_0.cfg.out
-Pb max = 0.12406
-Tolerancia = 0.014121231662098983
-../../conf/exhaustivo/exhaustivo_i_1.cfg
-../../conf/exhaustivo/exhaustivo_i_1.cfg
-../../out/exhaustivo/exhaustivo_i_1.cfg.out
-Pb max = 0.105537
-Tolerancia = 0.01695069975458844
-../../conf/exhaustivo/exhaustivo_i_2.cfg
-../../conf/exhaustivo/exhaustivo_i_2.cfg
-../../out/exhaustivo/exhaustivo_i_2.cfg.out
-Pb max = 0.0855843
-Tolerancia = 0.021368772076186867
-../../conf/exhaustivo/exhaustivo_i_3.cfg
-../../conf/exhaustivo/exhaustivo_i_3.cfg
-../../out/exhaustivo/exhaustivo_i_3.cfg.out
-Pb max = 0.0569444
-Tolerancia = 0.0331219786317882
-../../conf/exhaustivo/exhaustivo_i_4.cfg
-../../conf/exhaustivo/exhaustivo_i_4.cfg
-../../out/exhaustivo/exhaustivo_i_4.cfg.out
-Pb max = 0.0567423
-Tolerancia = 0.033247073171161545
-../../conf/exhaustivo/exhaustivo_i_5.cfg
-../../conf/exhaustivo/exhaustivo_i_5.cfg
-../../out/exhaustivo/exhaustivo_i_5.cfg.out
-Pb max = 0.0268918
