@@ -63,7 +63,7 @@ for i in matriz_probabilidades:
 
 indice = 0
 # Para crear varias graficas para los distintos apartados axial, destrogiro
-label = abecedario = list(string.ascii_lowercase)
+abecedario = list(string.ascii_lowercase)
 for tip in tipos:
     # Crear un arreglo para los índices de las barras
     x = np.arange(len(matriz_probab[indice][0]))
@@ -74,7 +74,7 @@ for tip in tipos:
         # Crear la gráfica de barras
         r = 1- 0.04*j
         Y = 120/(r * 15)
-        plt.plot(x, matriz_probab[indice][j], label="T = " + str(Y) + " s")
+        plt.plot(x, matriz_probab[indice][j], label="Trafico = " + str(abecedario[j]))
         print(matriz_probab[indice])
         # Agregar los intervalos de confianza como líneas de error
         for i, intervalo in enumerate(matriz_interval[indice][j]):
