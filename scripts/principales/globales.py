@@ -6,7 +6,7 @@ CALIDAD = 0.95
 CIRCUITOS_RESERVADOS = 4
 A_0 = 15 # A para i = 0
 
-tipos = ["axial", "con_reserva", "destrogiro", "exhaustivo"]
+tipos = ["exhaustivo", "con_reserva", "axial", "destrogiro" ]
 conf = "../../conf/"
 fichero_conf = "prueba.cfg"
 out = "../../out/"

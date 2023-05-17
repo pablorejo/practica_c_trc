@@ -1,34 +1,35 @@
-axial
+4
+exhaustivo
 Tolerancia = 0.002
-../../conf/axial/axial_i_0.cfg
-../../conf/axial/axial_i_0.cfg
-../../out/axial/axial_i_0.cfg.out
-Pb max = 0.121851
-Tolerancia = 0.014413488604935534
-../../conf/axial/axial_i_1.cfg
-../../conf/axial/axial_i_1.cfg
-../../out/axial/axial_i_1.cfg.out
-Pb max = 0.106719
-Tolerancia = 0.016740805292403415
-../../conf/axial/axial_i_2.cfg
-../../conf/axial/axial_i_2.cfg
-../../out/axial/axial_i_2.cfg.out
-Pb max = 0.0838798
-Tolerancia = 0.02184364292714098
-../../conf/axial/axial_i_3.cfg
-../../conf/axial/axial_i_3.cfg
-../../out/axial/axial_i_3.cfg.out
-Pb max = 0.0572926
-Tolerancia = 0.03290852221752897
-../../conf/axial/axial_i_4.cfg
-../../conf/axial/axial_i_4.cfg
-../../out/axial/axial_i_4.cfg.out
-Pb max = 0.0560446
-Tolerancia = 0.03368586447222391
-../../conf/axial/axial_i_5.cfg
-../../conf/axial/axial_i_5.cfg
-../../out/axial/axial_i_5.cfg.out
-Pb max = 0.0354009
+../../conf/exhaustivo/exhaustivo_i_0.cfg
+../../conf/exhaustivo/exhaustivo_i_0.cfg
+../../out/exhaustivo/exhaustivo_i_0.cfg.out
+Pb max = 0.0183678
+Tolerancia = 0.10688620302921416
+../../conf/exhaustivo/exhaustivo_i_1.cfg
+../../conf/exhaustivo/exhaustivo_i_1.cfg
+../../out/exhaustivo/exhaustivo_i_1.cfg.out
+Pb max = 0.0183312
+Tolerancia = 0.10710360478310205
+../../conf/exhaustivo/exhaustivo_i_2.cfg
+../../conf/exhaustivo/exhaustivo_i_2.cfg
+../../out/exhaustivo/exhaustivo_i_2.cfg.out
+Pb max = 0.00892857
+Tolerancia = 0.22200003584000574
+../../conf/exhaustivo/exhaustivo_i_3.cfg
+../../conf/exhaustivo/exhaustivo_i_3.cfg
+../../out/exhaustivo/exhaustivo_i_3.cfg.out
+Pb max = 0.00614035
+Tolerancia = 0.3237143322449046
+../../conf/exhaustivo/exhaustivo_i_4.cfg
+../../conf/exhaustivo/exhaustivo_i_4.cfg
+../../out/exhaustivo/exhaustivo_i_4.cfg.out
+Pb max = 0.00208914
+Tolerancia = 0.9553317250160351
+../../conf/exhaustivo/exhaustivo_i_5.cfg
+../../conf/exhaustivo/exhaustivo_i_5.cfg
+../../out/exhaustivo/exhaustivo_i_5.cfg.out
+Pb max = 0.000636943
 con_reserva
 Tolerancia = 0.002
 ../../conf/con_reserva/con_reserva_i_0.cfg

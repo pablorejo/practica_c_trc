@@ -16,7 +16,7 @@ def obtener_probabilidad_bloqueo(nombre_archivo):
 
     return None
 
-
+print(len(globales.tipos))
 
 for tip in globales.tipos:
     print(tip)
