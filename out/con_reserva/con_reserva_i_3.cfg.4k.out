@@ -1,10 +1,10 @@
 Semilla: 333
-Tolerancia relativa: 0.262444
+Tolerancia relativa: 0.0236708
 
 Trafico/s promediado/s en a:
 Probabilidad de bloqueo estimada: 0.00262467
 	Confidence interval 1: (-7.50889e-05,0.00532443) with coverage: 0.95
-	Confidence interval 2: (-0.259131,0.26438) with coverage: 0.999998
+	Confidence interval 2: (-0.020984,0.0262333) with coverage: 0.999998
 	Number of samples: 1524
 	Variance: 0.0026195
 	Standard deviation: 0.0511811
@@ -14,7 +14,7 @@ Probabilidad de bloqueo estimada: 0.00262467
 Trafico/s promediado/s en b:
 Probabilidad de bloqueo estimada: 0.0408333
 	Confidence interval 1: (0.0268596,0.054807) with coverage: 0.95
-	Confidence interval 2: (-0.210894,0.292561) with coverage: 0.999998
+	Confidence interval 2: (0.0181291,0.0635376) with coverage: 0.999793
 	Number of samples: 1200
 	Variance: 0.0391986
 	Standard deviation: 0.197986
@@ -24,7 +24,7 @@ Probabilidad de bloqueo estimada: 0.0408333
 Trafico/s promediado/s en c:
 Probabilidad de bloqueo estimada: 0.0292249
 	Confidence interval 1: (0.0118504,0.0465994) with coverage: 0.95
-	Confidence interval 2: (-0.225549,0.283999) with coverage: 0.999998
+	Confidence interval 2: (0.0062459,0.0522039) with coverage: 0.996232
 	Number of samples: 1574
 	Variance: 0.0283888
 	Standard deviation: 0.16849
@@ -34,7 +34,7 @@ Probabilidad de bloqueo estimada: 0.0292249
 Trafico/s promediado/s en d:
 Probabilidad de bloqueo estimada: 0.00160256
 	Confidence interval 1: (0.000114461,0.00309067) with coverage: 0.95
-	Confidence interval 2: (-0.260421,0.263626) with coverage: 0.999998
+	Confidence interval 2: (-0.0220303,0.0252354) with coverage: 0.999998
 	Number of samples: 3120
 	Variance: 0.00160051
 	Standard deviation: 0.0400064
@@ -44,7 +44,7 @@ Probabilidad de bloqueo estimada: 0.00160256
 Trafico/s promediado/s en e:
 Probabilidad de bloqueo estimada: 0.0670886
 	Confidence interval 1: (0.0511309,0.0830463) with coverage: 0.95
-	Confidence interval 2: (-0.177749,0.311926) with coverage: 0.999998
+	Confidence interval 2: (0.0450059,0.0891713) with coverage: 0.99427
 	Number of samples: 1580
 	Variance: 0.0626274
 	Standard deviation: 0.250255

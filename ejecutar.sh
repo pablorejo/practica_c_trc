@@ -9,14 +9,14 @@ calidad=0.95
 if [ ! -d "conf" ]; then
     mkdir conf
     cd conf
-    mkdir axial destrogiro exhaustivo exhaustivo_con_reserva
+    mkdir axial con_reserva destrogiro exhaustivo exhaustivo_con_reserva
     cd ..
 fi
 
 if [ ! -d "out" ]; then
     mkdir out
     cd out
-    mkdir axial destrogiro exhaustivo exhaustivo_con_reserva
+    mkdir axial con_reserva destrogiro exhaustivo exhaustivo_con_reserva
     cd ..
 fi
 
