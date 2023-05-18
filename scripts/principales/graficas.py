@@ -98,7 +98,7 @@ for tip in tipos:
     plt.xlabel('Índice')
     plt.ylabel('Probabilidad')
     plt.title('Probabilidades del trafico de tipo ' + str(tip))
-    plt.legend()
+    plt.legend(loc='upper right')
     # Mostrar la gráfica
     indice += 1
     plt.savefig(globales.image + tip)
