@@ -97,29 +97,29 @@ Tolerancia = 0.002
 ../../conf/destrogiro/destrogiro_i_0.cfg
 ../../conf/destrogiro/destrogiro_i_0.cfg
 ../../out/destrogiro/destrogiro_i_0.cfg.out
-Pb max = 0.198212
-Tolerancia = 0.008090206445623877
+Pb max = 0.459197
+Tolerancia = 0.0023554291513228523
 ../../conf/destrogiro/destrogiro_i_1.cfg
 ../../conf/destrogiro/destrogiro_i_1.cfg
 ../../out/destrogiro/destrogiro_i_1.cfg.out
-Pb max = 0.166257
-Tolerancia = 0.010029568679814986
+Pb max = 0.431772
+Tolerancia = 0.0026320743355289365
 ../../conf/destrogiro/destrogiro_i_2.cfg
 ../../conf/destrogiro/destrogiro_i_2.cfg
 ../../out/destrogiro/destrogiro_i_2.cfg.out
-Pb max = 0.136751
-Tolerancia = 0.01262512157132306
+Pb max = 0.402693
+Tolerancia = 0.0029665626171798366
 ../../conf/destrogiro/destrogiro_i_3.cfg
 ../../conf/destrogiro/destrogiro_i_3.cfg
 ../../out/destrogiro/destrogiro_i_3.cfg.out
-Pb max = 0.112173
-Tolerancia = 0.01582960248901251
+Pb max = 0.371508
+Tolerancia = 0.003383464151512215
 ../../conf/destrogiro/destrogiro_i_4.cfg
 ../../conf/destrogiro/destrogiro_i_4.cfg
 ../../out/destrogiro/destrogiro_i_4.cfg.out
-Pb max = 0.0758929
-Tolerancia = 0.024352926294818094
+Pb max = 0.337401
+Tolerancia = 0.003927664707573481
 ../../conf/destrogiro/destrogiro_i_5.cfg
 ../../conf/destrogiro/destrogiro_i_5.cfg
 ../../out/destrogiro/destrogiro_i_5.cfg.out
-Pb max = 0.0508333
+Pb max = 0.30105
