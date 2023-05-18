@@ -21,7 +21,7 @@ for n in range(i):
     for trafico in range(num_traficos_distintos_1_salto):
         x = 3
         if(trafico == num_traficos_distintos_1_salto -1):
-            x = 5
+            x = 4
         A = x*peticiones_segundo[n]
         A_lista[n][trafico] = A
         resultado = subprocess.run(["../Erlang.tcl",str(m), str(A)], capture_output=True, text=True)
