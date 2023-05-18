@@ -4,6 +4,9 @@ def cambiar_lineas(archivo_entrada, archivo_salida, Y):
     with open(archivo_entrada, 'r') as archivo:
         lineas = archivo.readlines()
 
+
+    i = "M " + str(Y/2)
+    lineas_modificadas = [linea.replace("M 4.0", i) for linea in lineas]
     i = "M " + str(Y)
     lineas_modificadas = [linea.replace("M 8.0", i) for linea in lineas]
     i2 = "M " + str(2*Y)
