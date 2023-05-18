@@ -30,7 +30,7 @@ for tip in tipos:
     while 1:
         archivo_salida = globales.conf + tip + "/" + tip + "_i_" + str(i) + ".cfg"  # Ruta del archivo de salida
         r = 1- 0.04*i
-        Y = 120/(r * 15)
+        Y = globales.S/(r * 15)
         cambiar_lineas(archivo_entrada, archivo_salida, Y)
         i +=1
         if i> 5:
