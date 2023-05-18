@@ -11,12 +11,15 @@ def cambiar_lineas(archivo_entrada, archivo_salida, Y):
     lineas_modificadas = [linea.replace("M 8.0", i) for linea in lineas]
     i2 = "M " + str(2*Y)
     lineas_modificadas = [linea.replace("M 16.0", i2) for linea in lineas_modificadas]
+    i2 = "M " + str(4*Y)
+    lineas_modificadas = [linea.replace("M 32.0", i2) for linea in lineas_modificadas]
 
+    archivo.close()
     with open(archivo_salida, 'w') as archivo:
         archivo.writelines(lineas_modificadas)
 
     print("Archivo modificado con éxito.")
-
+    archivo.close()
 # Ejemplo de uso
 
 
