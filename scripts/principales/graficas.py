@@ -66,7 +66,7 @@ indice = 0
 abecedario = list(string.ascii_lowercase)
 for tip in tipos:
     # Crear un arreglo para los índices de las barras
-    plt.figure()
+    plt.figure(figsize=(10, 6))
     x = np.arange(len(matriz_probab[indice][0]))
 
     print("\n\nTipo " + tip + ": ")
