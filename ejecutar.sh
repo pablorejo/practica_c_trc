@@ -28,12 +28,28 @@ if [ ! -d "img" ]; then
     mkdir img
 fi
 
+if [ ! -d "resultados" ]; then
+    mkdir resultados
+fi
 
-cd scripts/principales
+cd scripts/otros
 
+echo Calculando probabilidades de bloqueo teóricas
+python3 calculos_prob_bloqueo.py > ../../resultados/apartado_a.txt
+python3 calculos_apartado_b.py > ../../resultados/apartado_b.txt
+
+
+cd ../principales
+
+echo Creando ficheros de configuración
 python3 crear_ficheros.py > ../../log/crear_ficheros.log
+
+echo Ejecutando el simulador
 python3 ejecutar.py > ../../log/ejecutar.log
-python3 graficas.py > ../../log/graficas.log
+
+echo Creando las gráficas
+python3 graficas.py  > ../../log/graficas.log
+
 
 cd ../..
 
