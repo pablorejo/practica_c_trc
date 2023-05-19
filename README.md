@@ -13,10 +13,11 @@ Sin enbargo tendremos 4 tipos distintos de enlaces
 4. Tipo 4: 10 tráficos 5 por cada sentido
 
 # Ejecución
-Para ejecutar la configuracion simplemente usar el comando
+Para ejecutar simplemente hacer un
 ```bash
-python3 ficheros.py
+./ejecutar.sh
 ```
+Si no funciona es posible que no esteas usando linux y el programa erlang o el simmmk no funcionen.
 
 ## parametros
 En caso de querer cambiar algunos parámetros:
