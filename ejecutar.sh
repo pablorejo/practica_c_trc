@@ -45,7 +45,7 @@ echo Creando ficheros de configuración
 python3 crear_ficheros.py > ../../log/crear_ficheros.log
 
 echo Ejecutando el simulador
-python3 ejecutar.py > ../../log/ejecutar.log
+time python3 ejecutar.py > ../../log/ejecutar.log
 
 echo Creando las gráficas
 python3 graficas.py  > ../../log/graficas.log
