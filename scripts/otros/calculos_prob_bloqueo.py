@@ -13,7 +13,7 @@ r = np.empty([i], dtype = float)
 peticiones_segundo = np.empty([i], dtype = float)
 
 
-#Cálculos 1 salto
+# Cálculos 1 salto
 
 for n in range(i):
     r[n] = 1 - 0.04*n
@@ -24,11 +24,11 @@ for n in range(i):
             x = 3
         A = (x + trafico)*peticiones_segundo[n]
         A_lista[n][trafico] = A
-        resultado = subprocess.run(["../Erlang.tcl",str(m), str(A)], capture_output=True, text=True)
+        resultado = subprocess.run(["../../Erlang.tcl",str(m), str(A)], capture_output=True, text=True)
         B = resultado.stdout.split()[0]
         B_1_salto[trafico][n] = B
 
-#Cálculos 2 saltos
+# Cálculos 2 saltos
 
 for n in range(i):
     B_2_salto[0][n] = 1 - ((1 - B_1_salto[1][n])*(1 - B_1_salto[3][n]))
@@ -47,7 +47,11 @@ print("\n")
 print("Valores de A \n")
 print(A_lista)
 print("\n")
+
 print("valores de B un salto\n")
-print(B_1_salto)
+for salto in B_1_salto:
+    print(salto)
+    
 print("\nValores de B dos saltos\n")
-print(B_2_salto)
+for salto in B_2_salto:
+    print(salto)
