@@ -27,7 +27,7 @@ def cambiar_lineas(archivo_entrada, archivo_salida, Y):
 tipos = globales.tipos
 
 for tip in tipos:
-    archivo_entrada = globales.conf + tip + "/" + globales.fichero_conf  # Ruta del archivo de entrada
+    archivo_entrada = globales.conf_default + tip + ".conf"  # Ruta del archivo de entrada
 
     i = 0
     while 1:
